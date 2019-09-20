@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Quick Product View</title>
+    <link rel="stylesheet" type="text/css" href="details.css">
+</head>
+
+<body>
+
+    <div class="product-thumb">
+        <div class="product-thumb-image">
+            <img src="details.jpg">
+            <div class="quickview-title"> Quick View</div>
+        </div>
+        <div class="product-thumb-title">
+            <h3>Vans Red Shoes</h3>
+            <h3>Price : <span>Solicite Presupuesto</span></h3>
+
+        </div>
+    </div>
+    <div class="product-view">
+        <div class="close-btn"></div>
+        <div class="product-big-image">
+            <img src="details.jpg">
+        </div>
+        <div class="product-big-desc">
+            <h2> Vans Red Shoes</h2>
+            <h5>Product code : 3316899</h5>
+            <h5>Units : 30</h5>
+            <h5>Brand : Vans</h5>
+            <h6> <a href="#">1 review</a><a href="#">View all review</a></h6>
+            <div class="price">
+                <h4 class="oldprice"><del>Rs. 2260</del><sup>25% OFF</sup></h4>
+                <h4 class="NEWprice">Rs. 1999 + <abbr>99 Shipping</abbr></h4>
+                <h5> Add price </h5>
+                <input type="submit" name="presupuesto" value="presupuesto" />
+            </div>
+            <button class="buybutton"> Click to Buy</button>
+            <p><b>Warranty : </b>1 day seller replacement warranty against menufecturing defects.</p>
+            <p><b>Shipping: </b>Dispached within 2-3 working days.</p>
+        </div>
+    </div>
+
+
+    <div class="product-thumb">
+        <div class="product-thumb-image">
+            <img src="details.jpg">
+            <div class="quickview-title"> Quick View</div>
+        </div>
+        <div class="product-thumb-title">
+            <h3>Vans Red Shoes</h3>
+            <h3>Price : <span>Solicite Presupuesto</span></h3>
+        </div>
+    </div>
+
+    <div class="product-thumb">
+        <div class="product-thumb-image">
+            <img src="details.jpg">
+            <div class="quickview-title"> Quick View</div>
+        </div>
+        <div class="product-thumb-title">
+            <h3>Vans Red Shoes</h3>
+            <h3>Price : <span>Solicite Presupuesto</span></h3>
+        </div>
+    </div>
+    <script type="text/javascript" src="jquery-3.4.1.slim.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.quickview-title').click(function() {
+                var $productview = $(this).parent().parent().next();
+                $($productview).fadeIn('1000');
+            });
+            $('.close-btn').click(function() {
+                var $closebtn = $(this).parent();
+                $($closebtn).fadeOut('800');
+            });
+        });
+    </script>
+</body>
+
+</html>
